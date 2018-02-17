@@ -1,0 +1,139 @@
+<div class="container">
+	<div class="row">
+		<div class="wrapper">
+		    <!--sidebar-->
+    	    <div class="side-bar">
+                <ul>
+                    <li class="menu-head">
+                        <img src="img/unlimit-logo.png" style="height:40px;" id="logo"></img>
+                    </li>
+                    <div class="menu font-16" id="menuItem">
+                        <li ui-sref-active="active" style="border-top: 1px solid #e7e7e7;">
+                            <a ui-sref=".dashboard">
+                                <img src="img/Dashboard icon@2x.png" style="height:20px;" class="pull right"></img> &nbsp;
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref=".monitoring">
+                                <img src="img/Monitoring icon@2x.png" style="height:20px;"></img> &nbsp; 
+                                <span>Monitoring</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref=".trends">
+                                <img src="img/Trends Icon@2x.png" style="height:20px;"></img> &nbsp; 
+                                <span>Trends</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref=".alerts">
+                                <img src="img/Alerts icon@2x.png" style="height:20px;"></img> &nbsp; 
+                                <span>Alerts</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref=".management">
+                                <img src="img/Settings icon@2x.png" style="height:20px;"></img> &nbsp; 
+                                <span>Management</span>
+                            </a>
+                        </li>
+            
+                    </div>
+                    
+                    <div class="menu font-16 menuHide" id="menuItemIcon">
+                        <li style="border-top: 1px solid #e7e7e7;margin-top:10px;" class="right">
+                            <a ui-sref=".dashboard">
+                                <img src="img/Dashboard icon@2x.png" style="height:20px;"></img>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active" class="right">
+                            <a ui-sref=".monitoring">
+                                <img src="img/Monitoring icon@2x.png" style="height:20px;"></img>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active" class="right">
+                            <a ui-sref=".trends">
+                                <img src="img/Trends Icon@2x.png" style="height:20px;"></img>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active" class="right">
+                            <a ui-sref=".alerts">
+                                <img src="img/Alerts icon@2x.png" style="height:20px;"></img>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active" class="right">
+                            <a ui-sref=".management">
+                                <img src="img/Settings icon@2x.png" style="height:20px;"></img>
+                            </a>
+                        </li>
+            
+                    </div>
+                    
+                </ul>
+    	    </div>
+    	    <!--navbar-->
+    	    <div class="navbarfixedtop">
+    	        <nav class="navbar navbar-default navbar-fixed-top header-body navbartop" role="navigation">
+            		<div class="container-fluid">
+            			<div class="navbar-header">
+                			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    			<span class="sr-only">Toggle navigation</span>
+                    			<span class="icon-bar"></span>
+                    			<span class="icon-bar"></span>
+                    			<span class="icon-bar"></span>
+                			</button>
+                            <div  class="navbar-brand">
+                                <a class="push_menu">
+                                    <span class="glyphicon glyphicon-align-justify"></span>
+                                </a>
+                            </div>
+            			</div>
+            			<div id="navbar" class="collapse navbar-collapse">
+            				<a class="navbar-brand1 navbar-brand-centered">
+                                <img src="img/tata-power-logo.png"  class="img-responsive"></img>
+                            </a>
+            				<ul class="nav navbar-nav navbar-right">
+                              <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" style="height: 75px;padding-top:28px;">
+                                    <span class="fa fa-user font-25"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> &nbsp;Ashok Pal</a></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-phone"></span> &nbsp;9034438351</a></li>
+                                    <li><a href="#"><i class="fa fa-users"></i> &nbsp;Group T3</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li ng-click="thresholdModel('md')"><a href="#"><span class="glyphicon glyphicon-bell"></span> &nbsp;Threshold Values</a></li>
+                                    <li ng-click="profileModel('md')"><a href="#"><span class="glyphicon glyphicon-user"></span> &nbsp;User Profile</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> &nbsp;Logout</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+            			</div><!--/.nav-collapse -->
+            		</div>
+        	     </nav>
+    	    </div>
+    	    <!--body-->
+            <div class="content">
+                <div ui-view style="padding: 20px;"></div>
+            </div>
+            <!--footer-->
+            <footer class="navbar-fixed-bottom">
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="pull-left"> Copyright © EnrichAI Plugin 2017. All right reserved. </p>
+                        <div class="pull-right">
+                            <ul class="nav nav-pills payments" >
+                            	<li><i class="fa fa-facebook-square"></i></li>
+                                <li><i class="fa fa-twitter-square"></i></li>
+                                <li><i class="fa fa-linkedin-square"></i></li>
+                                <li><i class="fa fa-google-plus-square"></i></li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+            </footer>
+		</div>
+	</div>
+</div>
