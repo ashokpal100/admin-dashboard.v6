@@ -25,3 +25,5 @@ For Development Environment
 ```
 gulp dev
 ```
+
+![v6](https://user-images.githubusercontent.com/12198089/36344355-1f6bad80-143f-11e8-9965-f5148d58163f.PNG)
